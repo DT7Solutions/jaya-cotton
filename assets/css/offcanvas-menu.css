@@ -47,7 +47,7 @@
     right: 0;
     text-align: right;
     padding: 10px 10px 10px 0;
-	background-color: #092a48;
+	background-color: #fff;
     border-radius: 0;
 }
 
@@ -60,7 +60,7 @@
     right: 0;
     top: 50%;
     margin: -15px auto 0;
-	background: url(../images/logo-m.png) no-repeat;
+	background: url(../images/small.png) no-repeat;
 }
 
 #offcanvas-menu .close-menu {

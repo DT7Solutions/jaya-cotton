@@ -22,3 +22,16 @@
     background-size: cover!important;
     background-attachment: fixed !important;
 }
+.content-align{
+    text-align: justify!important;
+}
+
+
+img{
+    border-radius: 5px!important;
+}
+.subPage .header-title {
+    background: url(../images/contactpage/jayacotton-contactpage-1920x500.jpg) no-repeat center top!important;
+    background-size: cover!important;
+    background-attachment: fixed!important;
+}
