@@ -35,3 +35,24 @@ img{
     background-size: cover!important;
     background-attachment: fixed!important;
 }
+.subPage .header-heading {
+    background: url(../images/contactpage/jayacotton-contactpage-1920x500.jpg) no-repeat center top!important;
+    background-size: cover!important;
+    background-attachment: fixed!important;
+}
+
+@media  (max-width:992px) {
+    .mobile-margin-bottom {
+      margin-bottom: 30px!important;
+    }
+  }
+  .content-align{
+    text-align: justify!important;
+  }
+  
+  
+  
+  
+  
+  
+  
