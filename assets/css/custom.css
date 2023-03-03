@@ -1,0 +1,24 @@
+.subPage .header-title {
+    background: url(../images/contactpage/jayacotton-contactpage-1920x500.jpg) no-repeat center top!important;
+    background-size: cover!important;
+}
+
+@media only screen and (max-width: 767px){
+    .header-title{
+        background: url(../images/bg-trail.png) no-repeat center top!important;
+        background-size: cover!important;
+        background-attachment: fixed!important;
+
+       
+    }
+   
+
+}
+.footer-section .footer-container {
+    padding: 45px 0px!important;
+}
+.counting-section {
+    background: url(../images/homepage/jaya-cotton-homepage-company-stats-1900x500-two.png) no-repeat center!important;
+    background-size: cover!important;
+    background-attachment: fixed !important;
+}
