@@ -3454,7 +3454,7 @@ textarea, select {
     .contact-section .contact-wrapper .form-section .contact-form .form-group .form-control {
       font-size: 16px;
       color: #8f969e;
-      background-color: #eef1f5;
+      /* background-color: #eef1f5; */
       border: 0;
       box-shadow: none;
       border-radius: 5px;
@@ -8094,3 +8094,32 @@ textarea, select {
     background: #48c7ec; } }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* .footer-text-size {
+  font-size: 15px;
+  line-height: 25px;
+  color: #aaa;
+  display: inline-block;
+  margin-left: 15px;
+  font-weight: 100;
+} */
+
+.footer-wrapper .location li{
+  font-weight: 300 !important;
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-content {
+    margin-top: -8px !important;
+  }
+  .about-img img{
+    padding-top: 60px;
+  }
+
+  }
+
+  .contact-form .form-group {
+    border: 1px solid gray;
+    border-radius: 4px;
+  }
