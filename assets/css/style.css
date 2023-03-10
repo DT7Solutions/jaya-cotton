@@ -8123,3 +8123,9 @@ textarea, select {
     border: 1px solid gray;
     border-radius: 4px;
   }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .res-sec {
+      padding-left: 30px !important;
+    }
+  }
