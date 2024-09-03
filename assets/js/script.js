@@ -549,3 +549,69 @@ jQuery(function ($) {
         });
 
 });   // Jquery-End
+
+
+
+function Mail(){
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let phone = document.getElementById('Phone').value;
+    let firmname = document.getElementById('firmname').value;
+    let supplyIndia = document.getElementById('supplyIndia').value;
+    let outsideIndia = document.getElementById('OutsideIndia').value;
+    let message = document.getElementById('message').value;
+
+    // Simple email pattern for validation
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Validations
+    if (name === "") {
+        alert("Name is required.");
+        return false;
+    }
+    if (email === "" || !emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return false;
+    }
+    if (phone === "" || isNaN(phone) || phone.length !== 10) {
+        alert("Please enter a valid 10-digit phone number.");
+        return false;
+    }
+    if (firmname === "") {
+        alert("Firm name is required.");
+        return false;
+    }
+    if (supplyIndia === "") {
+        alert("Please indicate if you supply in India.");
+        return false;
+    }
+    if (outsideIndia === "") {
+        alert("Please indicate if you supply outside India.");
+        return false;
+    }
+    if (message === "") {
+        alert("Message cannot be empty.");
+        return false;
+    }
+
+    let contactdata = {
+        name : name,
+        email : email,
+        phone : phone,
+        firmname : firmname,
+        supplyIndia : supplyIndia, 
+        outsideIndia : outsideIndia,
+        message : message
+    }
+    emailjs.send('service_inugbpo', '', contactdata)
+        .then(function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Message sent successfully!');
+            document.getElementById("form-send").reset();
+            $('#myModal').modal('hide');
+        }, function (error) {
+            console.log('FAILED...', error);
+            alert('Failed to send message.');
+        });
+}
+
