@@ -603,7 +603,7 @@ function Mail(){
         outsideIndia : outsideIndia,
         message : message
     }
-    emailjs.send('service_inugbpo', '', contactdata)
+    emailjs.send('service_inugbpo', 'template_38ycg6y', contactdata)
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
             alert('Message sent successfully!');
