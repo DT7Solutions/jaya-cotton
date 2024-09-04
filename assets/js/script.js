@@ -607,6 +607,16 @@ function Mail(){
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
             alert('Message sent successfully!');
+
+            // Push event to GTM Data Layer
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+                'event': 'formSubmissionSuccess',
+                'formName': 'Contact Form',
+                'responseStatus': response.status,
+                'responseText': response.text
+            });
+
             document.getElementById("form-send").reset();
             $('#myModal').modal('hide');
         }, function (error) {
