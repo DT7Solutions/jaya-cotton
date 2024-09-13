@@ -1,0 +1,4 @@
+User Agent: *
+Allow:https://jayacottonproducts.com/
+Disallow:
+Sitemap:https://jayacottonproducts.com/sitemap.xml
